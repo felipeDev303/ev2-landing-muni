@@ -4,6 +4,7 @@ import HeroSection from "./HeroSection";
 import HeroActions from "./HeroActions";
 
 import TouristCarousel from "./TouristCarousel";
+import ContactForm from "./ContactForm";
 import Footer from "./Footer";
 import { Button, Typography } from "@material-tailwind/react";
 import {
@@ -30,6 +31,7 @@ function App() {
         <TouristCarousel />
       </section>
 
+      <ContactForm />
       <Footer />
     </div>
   );
