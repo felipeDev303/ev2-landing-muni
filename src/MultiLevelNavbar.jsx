@@ -117,7 +117,7 @@ function NavMenuItem({ label, href, submenu }) {
             <Button
               {...triggers}
               variant="text"
-              className="flex items-center gap-1 px-3 py-2 text-gray-900 font-light hover:font-semibold hover:text-cyan-900 focus:outline-none capitalize bg-transparent border-none shadow-none"
+              className="flex items-center gap-1 px-3 py-2 text-gray-900 font-light hover:font-semibold focus:outline-none capitalize bg-transparent border-none shadow-none"
             >
               {label}
               <ChevronDownIcon
@@ -195,7 +195,7 @@ function TopBar() {
             href="https://www.portaltransparencia.cl/PortalPdT/ingreso-sai-v2?idOrg=498"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs sm:text-sm bg-transparent text-gray-300 font-light hover:font-bold border-none shadow-none"
+            className="text-xs sm:text-sm bg-transparent text-gray-300 font-light hover:text-white border-none shadow-none"
           >
             SOLICITAR INFORMACIÓN
           </Button>
@@ -204,7 +204,7 @@ function TopBar() {
             href="https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU045"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs sm:text-sm bg-transparent text-gray-300 font-light hover:font-bold border-none shadow-none"
+            className="text-xs sm:text-sm bg-transparent text-gray-300 font-light hover:text-white border-none shadow-none"
           >
             TRANSPARENCIA ACTIVA
           </Button>
@@ -213,7 +213,7 @@ function TopBar() {
             href="https://www.leylobby.gob.cl/instituciones/MU045"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs sm:text-sm bg-transparent text-gray-300 font-light hover:font-bold border-none shadow-none"
+            className="text-xs sm:text-sm bg-transparent text-gray-300 font-light hover:text-white border-none shadow-none"
           >
             PLATAFORMA LEY LOBBY
           </Button>
@@ -226,7 +226,7 @@ function TopBar() {
           href="https://www.portaltransparencia.cl/PortalPdT/ingreso-sai-v2?idOrg=498"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs bg-transparent text-gray-300 font-light hover:font-bold border-none shadow-none"
+          className="text-xs bg-transparent text-gray-300 font-light hover:text-white border-none shadow-none"
         >
           SOLICITAR INFORMACIÓN
         </Button>
@@ -235,7 +235,7 @@ function TopBar() {
           href="https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU045"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs bg-transparent text-gray-300 font-light hover:font-bold border-none shadow-none"
+          className="text-xs bg-transparent text-gray-300 font-light hover:text-white border-none shadow-none"
         >
           TRANSPARENCIA ACTIVA
         </Button>
@@ -244,7 +244,7 @@ function TopBar() {
           href="https://www.leylobby.gob.cl/instituciones/MU045"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs bg-transparent text-gray-300 font-light hover:font-bold border-none shadow-none"
+          className="text-xs bg-transparent text-gray-300 font-light hover:text-white border-none shadow-none"
         >
           PLATAFORMA LEY LOBBY
         </Button>

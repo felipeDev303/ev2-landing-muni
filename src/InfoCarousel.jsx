@@ -43,7 +43,7 @@ const infoSlides = [
 export default function InfoCarousel() {
   return (
     <div className="w-full mb-8">
-      <div className="w-full max-w-xs mx-auto px-2 sm:px-0">
+      <div className="w-full max-w-xs md:max-w-2xl lg:max-w-3xl mx-auto px-2 sm:px-0">
         <Carousel
           className="rounded-lg shadow-lg"
           transition={{ type: "tween", duration: 0.5 }}
