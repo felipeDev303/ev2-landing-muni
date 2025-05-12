@@ -1,7 +1,7 @@
 import React from "react";
 import { Carousel } from "@material-tailwind/react";
 
-// Ejemplo de slides de información relevante (puedes editar el contenido)
+// Ejemplo de slides de información relevante 
 const infoSlides = [
   {
     title: "Permiso de Circulación",
@@ -74,13 +74,39 @@ export default function InfoCarousel() {
             </div>
           )}
         >
-          {infoSlides.map((slide, idx) => (
+           {infoSlides.map((slide, idx) => (
             <div key={idx} className="flex flex-col justify-center items-center bg-white rounded-lg overflow-hidden shadow p-4 md:p-8">
-              <img
-                src={slide.image}
-                alt={slide.title}
-                className="h-72 md:h-[420px] object-contain rounded-lg shadow mx-auto"
-              />
+              {slide.title === "Transmisión del Consejo" ? (
+                <a
+                  href="https://www.youtube.com/channel/UCy1fOL7pknjtmlJrcffgo6Q"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={slide.image}
+                    alt={slide.title}
+                    className="h-72 md:h-[420px] object-contain rounded-lg shadow mx-auto hover:scale-105 transition-transform duration-200"
+                  />
+                </a>
+              ) : slide.title === "Permiso de Circulación" ? (
+                <a
+                  href="https://portalweb.insico.cl/Cholchol/Permisos/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={slide.image}
+                    alt={slide.title}
+                    className="h-72 md:h-[420px] object-contain rounded-lg shadow mx-auto hover:scale-105 transition-transform duration-200"
+                  />
+                </a>
+              ) : (
+                <img
+                  src={slide.image}
+                  alt={slide.title}
+                  className="h-72 md:h-[420px] object-contain rounded-lg shadow mx-auto"
+                />
+              )}
               <div className="flex flex-col justify-center items-center bg-white rounded-lg mt-4">
                 <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2 text-center">{slide.title}</h3>
                 <p className="text-gray-700 text-base text-center">{slide.description}</p>

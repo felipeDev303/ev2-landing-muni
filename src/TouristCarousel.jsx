@@ -1,7 +1,6 @@
 import React from "react";
 import { Carousel } from "@material-tailwind/react";
 
-// Puedes reemplazar estas imágenes por imágenes turísticas reales
 const touristImages = [
   { src: "/public/cholchol-aereo.jpg", alt: "Cholchol aéreo", title: "Cholchol aéreo" },
   { src: "/public/cruce-balsa.jpg", alt: "Cruce en balsa", title: "Cruce en balsa" },

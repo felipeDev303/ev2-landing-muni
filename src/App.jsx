@@ -1,4 +1,4 @@
-import "./App.css"; // Tus estilos globales si los tienes
+import "./App.css"; // Estilos globales
 import MultiLevelNavbar from "./MultiLevelNavbar";
 import HeroSection from "./HeroSection";
 import HeroActions from "./HeroActions";
@@ -6,12 +6,8 @@ import HeroActions from "./HeroActions";
 import TouristCarousel from "./TouristCarousel";
 import ContactForm from "./ContactForm";
 import Footer from "./Footer";
-import { Button, Typography } from "@material-tailwind/react";
-import {
-  MagnifyingGlassIcon,
-  CalendarDaysIcon,
-  BriefcaseIcon,
-} from "@heroicons/react/24/outline"; // Importar iconos
+import MapaMunicipalidad from "./MapaMunicipalidad";
+
 
 function App() {
 
@@ -32,6 +28,7 @@ function App() {
       </section>
 
       <ContactForm />
+      <MapaMunicipalidad />
       <Footer />
     </div>
   );
