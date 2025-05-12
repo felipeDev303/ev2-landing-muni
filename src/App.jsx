@@ -1,6 +1,6 @@
 import "./App.css"; // Estilos globales
 import MultiLevelNavbar from "./MultiLevelNavbar";
-import HeroSection from "./HeroSection";
+import InfoCarousel from "./InfoCarousel";
 import HeroActions from "./HeroActions";
 
 import TouristCarousel from "./TouristCarousel";
@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       <MultiLevelNavbar />
-      <HeroSection />
+      <InfoCarousel />
 
       {/* Sección de acciones principales en fondo oscuro */}
       <section className="w-full bg-[#23272f] py-10">
