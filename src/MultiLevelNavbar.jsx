@@ -17,7 +17,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 
-// Opciones de menú 
+// Opciones de menú
 const menuItemsData = [
   {
     label: "Vecinos",
@@ -30,9 +30,15 @@ const menuItemsData = [
       { label: "Beneficios Sociales", href: "/vecinos/beneficios-sociales" },
       { label: "Vivienda", href: "/vecinos/vivienda" },
       { label: "Asistencia Legal", href: "/vecinos/asistencia-legal" },
-      { label: "Centro de Desarrollo Laboral", href: "/vecinos/centro-desarrollo-laboral" },
+      {
+        label: "Centro de Desarrollo Laboral",
+        href: "/vecinos/centro-desarrollo-laboral",
+      },
       { label: "Plan Regulador", href: "/vecinos/plan-regulador" },
-      { label: "Organizaciones Comunitarias y Oficina Territorial", href: "/vecinos/organizaciones" },
+      {
+        label: "Organizaciones Comunitarias y Oficina Territorial",
+        href: "/vecinos/organizaciones",
+      },
       { label: "Aseo y Ornato", href: "/vecinos/aseo-ornato" },
       { label: "Reciclaje y Cuidado Ambiental", href: "/vecinos/reciclaje" },
       { label: "Mascotas y Animales", href: "/vecinos/mascotas" },
@@ -50,8 +56,14 @@ const menuItemsData = [
       { label: "Emprendedores", href: "/comunidades/emprendedores" },
       { label: "Participa", href: "/comunidades/participa" },
       { label: "Agrícola y ganadera", href: "/comunidades/agricola-ganadera" },
-      { label: "Centro de Desarrollo Laboral", href: "/comunidades/centro-desarrollo-laboral" },
-      { label: "Oficina de Asuntos Religiosos", href: "/comunidades/asuntos-religiosos" },
+      {
+        label: "Centro de Desarrollo Laboral",
+        href: "/comunidades/centro-desarrollo-laboral",
+      },
+      {
+        label: "Oficina de Asuntos Religiosos",
+        href: "/comunidades/asuntos-religiosos",
+      },
     ],
   },
   {
@@ -59,17 +71,26 @@ const menuItemsData = [
     submenu: [
       { label: "Cultura", href: "/disfruta/cultura" },
       { label: "Deportes", href: "/disfruta/deportes" },
-      { label: "Cursos y Talleres en Cholchol", href: "/disfruta/cursos-talleres" },
+      {
+        label: "Cursos y Talleres en Cholchol",
+        href: "/disfruta/cursos-talleres",
+      },
     ],
   },
   {
     label: "Empresas",
     submenu: [
-      { label: "Trámites y Solicitudes", href: "/empresas/tramites-solicitudes" },
+      {
+        label: "Trámites y Solicitudes",
+        href: "/empresas/tramites-solicitudes",
+      },
       { label: "Plan Regulador", href: "/empresas/plan-regulador" },
       { label: "Emprende", href: "/empresas/emprende" },
       { label: "Licitaciones", href: "/empresas/licitaciones" },
-      { label: "Centro de Desarrollo Laboral", href: "/empresas/centro-desarrollo-laboral" },
+      {
+        label: "Centro de Desarrollo Laboral",
+        href: "/empresas/centro-desarrollo-laboral",
+      },
     ],
   },
   {
@@ -79,14 +100,23 @@ const menuItemsData = [
       { label: "Direcciones", href: "/municipalidad/direcciones" },
       { label: "Conócenos", href: "/municipalidad/conocenos" },
       { label: "Cuenta Pública", href: "/municipalidad/cuenta-publica" },
-      { label: "Concursos Públicos y Licitaciones", href: "/municipalidad/concursos" },
+      {
+        label: "Concursos Públicos y Licitaciones",
+        href: "/municipalidad/concursos",
+      },
       { label: "Plan Regulador", href: "/municipalidad/plan-regulador" },
       { label: "Municipalidad en terreno", href: "/municipalidad/en-terreno" },
       { label: "Así usamos tus recursos", href: "/municipalidad/recursos" },
       { label: "Trabaja con Nosotros", href: "/municipalidad/trabaja" },
-      { label: "Objetivos de Desarrollo Sostenible", href: "/municipalidad/ods" },
+      {
+        label: "Objetivos de Desarrollo Sostenible",
+        href: "/municipalidad/ods",
+      },
       { label: "Asociaciones", href: "/municipalidad/asociaciones" },
-      { label: "Visor de roles y predios", href: "/municipalidad/visor-roles-predios" },
+      {
+        label: "Visor de roles y predios",
+        href: "/municipalidad/visor-roles-predios",
+      },
     ],
   },
   {
@@ -102,7 +132,6 @@ const menuItemsData = [
 
 // Subcomponente para los items del menú con dropdowns
 function NavMenuItem({ label, href, submenu }) {
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // Triggers para hover. Para mejor soporte táctil.
@@ -115,7 +144,11 @@ function NavMenuItem({ label, href, submenu }) {
     return (
       <Menu open={isMenuOpen} handler={setIsMenuOpen} allowHover>
         <MenuHandler>
-          <Typography as="div" variant="small" className="font-light outline-none text-gray-900 tracking-wide font-sans">
+          <Typography
+            as="div"
+            variant="small"
+            className="font-light outline-none text-gray-900 tracking-wide font-sans"
+          >
             <Button
               {...triggers}
               variant="text"
@@ -184,10 +217,7 @@ function TopBar() {
             alt="Logo Municipalidad"
             className="h-9 w-auto"
           />
-          <Typography
-            variant="h6"
-            className="text-white text-xs md:text-sm"
-          >
+          <Typography variant="h6" className="text-white text-xs md:text-sm">
             Municipalidad de Cholchol
           </Typography>
         </Link>

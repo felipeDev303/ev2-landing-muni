@@ -6,8 +6,14 @@ export default function HeroActions() {
       {/* Encuesta de Gustos y Actividades */}
       <Card className="flex flex-col justify-between p-8 bg-white rounded-2xl shadow-lg border border-cyan-100">
         <div>
-          <h3 className="text-2xl font-bold text-cyan-700 mb-2">ENCUESTA DE GUSTOS Y ACTIVIDADES</h3>
-          <p className="text-gray-700 mb-6">Queremos conocer tus intereses y actividades favoritas para mejorar la oferta de talleres, deportes y cultura en Cholchol. ¡Tu opinión es importante!</p>
+          <h3 className="text-2xl font-bold text-cyan-700 mb-2">
+            ENCUESTA DE GUSTOS Y ACTIVIDADES
+          </h3>
+          <p className="text-gray-700 mb-6">
+            Queremos conocer tus intereses y actividades favoritas para mejorar
+            la oferta de talleres, deportes y cultura en Cholchol. ¡Tu opinión
+            es importante!
+          </p>
         </div>
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLScBBsnUVPRz9K-SMc7p-sMfZ_s3tTOPvUYjnOr_viCpk6u3TQ/viewform"
@@ -21,8 +27,14 @@ export default function HeroActions() {
       {/* Encuesta de Cambio Climático y Medidas */}
       <Card className="flex flex-col justify-between p-8 bg-white rounded-2xl shadow-lg border border-cyan-100">
         <div>
-          <h3 className="text-2xl font-bold text-cyan-700 mb-2">ENCUESTA DE CAMBIO CLIMÁTICO Y MEDIDAS</h3>
-          <p className="text-gray-700 mb-6">Ayúdanos a identificar cómo el cambio climático afecta a nuestra comuna y qué acciones podemos tomar juntos para adaptarnos y proteger nuestro entorno.</p>
+          <h3 className="text-2xl font-bold text-cyan-700 mb-2">
+            ENCUESTA DE CAMBIO CLIMÁTICO Y MEDIDAS
+          </h3>
+          <p className="text-gray-700 mb-6">
+            Ayúdanos a identificar cómo el cambio climático afecta a nuestra
+            comuna y qué acciones podemos tomar juntos para adaptarnos y
+            proteger nuestro entorno.
+          </p>
         </div>
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLScbQ-UPctjQiDLlZRugqqbz1XkY-YPuxFAHfcySveaAMzvBkw/viewform"
@@ -36,4 +48,3 @@ export default function HeroActions() {
     </section>
   );
 }
-

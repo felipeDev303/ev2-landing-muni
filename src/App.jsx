@@ -8,9 +8,7 @@ import ContactForm from "./ContactForm";
 import Footer from "./Footer";
 import MapaMunicipalidad from "./MapaMunicipalidad";
 
-
 function App() {
-
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       <MultiLevelNavbar />
@@ -23,7 +21,9 @@ function App() {
 
       {/* Slide de turismo al final */}
       <section className="max-w-5xl mx-auto mt-12 px-4">
-        <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">Descubre Cholchol</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">
+          Descubre Cholchol
+        </h2>
         <TouristCarousel />
       </section>
 
