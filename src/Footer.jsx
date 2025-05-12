@@ -1,6 +1,7 @@
 import React from "react";
 import { Typography } from "@material-tailwind/react";
 import { FaInstagram, FaFacebook } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -56,7 +57,9 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex flex-col items-center mt-8">
-        <img src="/logo-muni.png" alt="Logo Municipalidad" className="h-12 w-auto mb-2" />
+        <Link to="/" aria-label="Ir al inicio">
+          <img src="/logo-muni.png" alt="Logo Municipalidad" className="h-16 w-auto mb-2 hover:scale-105 transition-transform duration-200" />
+        </Link>
         <div className="text-center text-xs text-gray-400">&copy; {new Date().getFullYear()} Municipalidad de Cholchol. Todos los derechos reservados.</div>
       </div>
     </footer>
