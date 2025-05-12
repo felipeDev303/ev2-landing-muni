@@ -10,13 +10,14 @@ import {
   MenuList,
   MenuItem,
 } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 import {
   ChevronDownIcon,
   Bars3Icon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 
-// Opciones de menú (sin cambios)
+// Opciones de menú 
 const menuItemsData = [
   {
     label: "Vecinos",
@@ -101,9 +102,10 @@ const menuItemsData = [
 
 // Subcomponente para los items del menú con dropdowns
 function NavMenuItem({ label, href, submenu }) {
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Triggers para hover. Para mejor soporte táctil, considera onClick.
+  // Triggers para hover. Para mejor soporte táctil.
   const triggers = {
     onMouseEnter: () => setIsMenuOpen(true),
     onMouseLeave: () => setIsMenuOpen(false),
@@ -133,8 +135,8 @@ function NavMenuItem({ label, href, submenu }) {
           {submenu.map((sub, idx) => (
             <MenuItem key={idx} className="p-0 bg-cyan-400">
               <Typography
-                as="a"
-                href={sub.href}
+                as={Link}
+                to={sub.href}
                 variant="small"
                 className="font-light outline-none text-gray-900 hover:font-bold tracking-wide font-sans"
               >
@@ -149,8 +151,8 @@ function NavMenuItem({ label, href, submenu }) {
 
   return (
     <Typography
-      as="a"
-      href={href}
+      as={Link}
+      to={href}
       variant="small"
       className="font-light py-2 px-3 rounded hover:bg-cyan-200 active:bg-cyan-300 focus:bg-cyan-300 capitalize text-gray-900 hover:text-cyan-900 hover:font-semibold tracking-wide font-sans"
     >
@@ -176,7 +178,7 @@ function TopBar() {
     <div className="w-full px-4 py-2 bg-gradient-to-r from-[#23272f] to-[#37393a] text-white">
       {/* Pantallas medianas y grandes: logo, texto y botones */}
       <div className="hidden sm:flex items-center justify-between w-full">
-        <a href="/" className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2">
           <img
             src="/logo-muni.png"
             alt="Logo Municipalidad"
@@ -188,66 +190,60 @@ function TopBar() {
           >
             Municipalidad de Cholchol
           </Typography>
-        </a>
+        </Link>
         <div className="flex items-center gap-2 md:gap-3">
-          <Button
-            as="a"
+          <a
             href="https://www.portaltransparencia.cl/PortalPdT/ingreso-sai-v2?idOrg=498"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs sm:text-sm bg-transparent text-gray-300 font-light hover:text-white border-none shadow-none"
+            className="text-xs sm:text-sm bg-transparent text-gray-300 font-light hover:text-white border-none shadow-none flex items-center px-3 py-2 rounded"
           >
             SOLICITAR INFORMACIÓN
-          </Button>
-          <Button
-            as="a"
+          </a>
+          <a
             href="https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU045"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs sm:text-sm bg-transparent text-gray-300 font-light hover:text-white border-none shadow-none"
+            className="text-xs sm:text-sm bg-transparent text-gray-300 font-light hover:text-white border-none shadow-none flex items-center px-3 py-2 rounded"
           >
             TRANSPARENCIA ACTIVA
-          </Button>
-          <Button
-            as="a"
+          </a>
+          <a
             href="https://www.leylobby.gob.cl/instituciones/MU045"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs sm:text-sm bg-transparent text-gray-300 font-light hover:text-white border-none shadow-none"
+            className="text-xs sm:text-sm bg-transparent text-gray-300 font-light hover:text-white border-none shadow-none flex items-center px-3 py-2 rounded"
           >
             PLATAFORMA LEY LOBBY
-          </Button>
+          </a>
         </div>
       </div>
       {/* Pantallas pequeñas: solo los botones centrados */}
       <div className="flex sm:hidden items-center justify-center w-full gap-2 mt-1">
-        <Button
-          as="a"
+        <a
           href="https://www.portaltransparencia.cl/PortalPdT/ingreso-sai-v2?idOrg=498"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs bg-transparent text-gray-300 font-light hover:text-white border-none shadow-none"
+          className="text-xs bg-transparent text-gray-300 font-light hover:text-white border-none shadow-none flex items-center px-3 py-2 rounded"
         >
           SOLICITAR INFORMACIÓN
-        </Button>
-        <Button
-          as="a"
+        </a>
+        <a
           href="https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU045"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs bg-transparent text-gray-300 font-light hover:text-white border-none shadow-none"
+          className="text-xs bg-transparent text-gray-300 font-light hover:text-white border-none shadow-none flex items-center px-3 py-2 rounded"
         >
           TRANSPARENCIA ACTIVA
-        </Button>
-        <Button
-          as="a"
+        </a>
+        <a
           href="https://www.leylobby.gob.cl/instituciones/MU045"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs bg-transparent text-gray-300 font-light hover:text-white border-none shadow-none"
+          className="text-xs bg-transparent text-gray-300 font-light hover:text-white border-none shadow-none flex items-center px-3 py-2 rounded"
         >
           PLATAFORMA LEY LOBBY
-        </Button>
+        </a>
       </div>
     </div>
   );
