@@ -69,7 +69,7 @@ export default function ContactForm() {
         backgroundRepeat: 'no-repeat',
       }}
     >
-      {/* Overlay oscuro para mejorar legibilidad */}
+      {/* Overlay oscuro para legibilidad */}
       <div className="absolute inset-0 bg-black/40 md:bg-black/30 rounded-2xl pointer-events-none" />
       <form
         className="relative z-10 w-full max-w-xs md:max-w-2xl lg:max-w-3xl mx-auto bg-white/80 backdrop-blur-md rounded-2xl shadow-2xl border border-cyan-100 p-4 md:p-7 flex flex-col gap-5"

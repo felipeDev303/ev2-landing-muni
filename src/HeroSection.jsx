@@ -1,6 +1,5 @@
 import React from "react";
 import InfoCarousel from "./InfoCarousel";
-import HeroActions from "./HeroActions";
 
 export default function HeroSection() {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { Carousel } from "@material-tailwind/react";
 
-// Ejemplo de slides de información relevante (puedes editar el contenido)
+// Ejemplo de slides de información relevante 
 const infoSlides = [
   {
     title: "Permiso de Circulación",
