@@ -56,6 +56,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
+
       <div className="flex flex-col items-center mt-8">
         <Link to="/" aria-label="Ir al inicio">
           <img src="/logo-muni.png" alt="Logo Municipalidad" className="h-16 w-auto mb-2 hover:scale-105 transition-transform duration-200" />

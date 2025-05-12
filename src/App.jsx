@@ -6,6 +6,7 @@ import HeroActions from "./HeroActions";
 import TouristCarousel from "./TouristCarousel";
 import ContactForm from "./ContactForm";
 import Footer from "./Footer";
+import MapaMunicipalidad from "./MapaMunicipalidad";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       </section>
 
       <ContactForm />
+      <MapaMunicipalidad />
       <Footer />
     </div>
   );
